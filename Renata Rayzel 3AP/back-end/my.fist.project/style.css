@@ -1,0 +1,54 @@
+/* Definindo a cor de fundo e o tipo de fonte */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #9615ff;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main {
+    text-align: center;
+}
+/* Estilo do título */
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+/* Estilo do subtítulo */
+h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Estilo do parágrafo */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Estilo para o botão de alerta */
+button {
+    background-color: #ffe91e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #35008b;
+}
+
