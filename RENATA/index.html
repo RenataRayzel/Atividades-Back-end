@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabuada de 1 a 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- GIFs nos cantos (links diretos do Giphy) -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTc5aXI3c214OGx6bGVsZHF6djl5cGpxbWZtbzl5NWtyazV1OWNkNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif" class="gif gif-top-left" alt="Estrela brilhando">
+    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YzVycjA5NXk3b2VxNThtangzZjV0amQxZXJ0bWU2Z2thNXk2dGxvNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Mlm4wLN5S42The8BD6/giphy.gif" class="gif gif-top-right" alt="Foguete animado">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc213bW8wcWp6dzNtNGlpcW9nbnRvem80Zmkxa3NibXBnZXNuaGxqdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4JVTF9zR9BicshFAb7/giphy.gif" class="gif gif-bottom-left" alt="Fogo animado">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc213bW8wcWp6dzNtNGlpcW9nbnRvem80Zmkxa3NibXBnZXNuaGxqdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ne3xrYlWtQFtC/giphy.gif" class="gif gif-bottom-right" alt="Confete colorido">
+
+    <!-- Box principal -->
+    <div class="card" role="region" aria-labelledby="titulo">
+      <h1 id="titulo">Tabuada de 1 a 10</h1>
+      <p class="desc">Digite um número (ex.: 7, 3.5 ou 2,75) e veja a tabuada completa de 1 a 10.</p>
+
+      <div class="row">
+        <label class="input" aria-label="Número para a tabuada">
+          <span>🔢</span>
+          <input id="numero" inputmode="decimal" autocomplete="off" placeholder="Ex.: 7 ou 2,5" />
+        </label>
+        <button id="btnGerar" aria-label="Gerar tabuada">Gerar</button>
+      </div>
+
+      <div class="actions">
+        <button id="btnLimpar" class="ghost" aria-label="Limpar">Limpar</button>
+        <button id="btnCopiar" class="ghost" aria-label="Copiar resultado">Copiar</button>
+      </div>
+
+      <div id="saida" class="table" aria-live="polite"></div>
+      <div class="foot">Dica: pressione <kbd>Enter</kbd> para gerar rapidamente.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
